@@ -134,10 +134,10 @@ Processing takes ~3 hours per subject. Parallel analysis is recommended.
 
 To use `script/SLURM_parallel.job`:
 1. Update `#SBATCH` parameters.
-2. Ensure dependencies are loaded in the **SHELL Configuration** section.
-3. Run the SLURM job:
+3. Ensure dependencies are loaded in the **SHELL Configuration** section (inc. update the environment parameters in SLURM_parallel.job i.e. 'conda activate /home/k*******/.conda/envs/kcl_nm')
+4. Run the SLURM job:
 ```
-sbatch {Github_root_path}/script/SLURM_parallel.job
+sbatch {Github_root_path}/scripts/SLURM_parallel.job
 ```
 
 ---
